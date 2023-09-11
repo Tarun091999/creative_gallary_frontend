@@ -52,7 +52,7 @@
 .nav-container{
   position: fixed;
   bottom: 0vh;
-  background-color: rgb(4, 72, 136);
+  background-color: rgba(91,87,116,255);
   width: 100vw;
   z-index: 9999999999;
 }
@@ -63,7 +63,7 @@
 }
 
 .bottom-nav-link{
-  color: rgb(121, 160, 197) !important;
+  color: rgb(23,63,99)
 }
 
 .search-bar{
@@ -74,17 +74,23 @@
   top: 0px;
   z-index: 100000;
   background-color: white;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 10px;
   box-shadow: 1px 3px 10px #00000036;
 }
 
 .search-box{
-  width: 70%;
+  width: 50%;
+  display: flex;
+  border: 1px solid rgb(160, 160, 160);
+  border-radius: 15px !important;
+  padding: 0px 10px;
+  justify-content: space-around;
 }
 
+
 .search-bar-add-ons{
-  width: 10%;
+ 
 }
 
 .wallpaper-container{
@@ -93,16 +99,21 @@
 }
 
 .search-bar-avatar{
-  width: 10%;
+  
+}
+
+.search-input{
+  border:  none !important;
+  border-radius: 0px !important;
+  width: 75%;
+  outline: none;
 }
 
 
 
-
 .name-avatar{
-  background-color: orange !important;
+  background-color:#6e6e92 !important;
   margin: auto;
-  color: orange;
 }
 
 
@@ -118,8 +129,6 @@
 
 .card-image img{
   width: 100%;
-  /* height: 100%; */
-  /* object-fit: cover; */
   overflow: auto;
 }
 .wallpaper-description{
@@ -180,33 +189,32 @@
 
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 9px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 10px grey; 
-  border-radius: 15px;
+  box-shadow: inset 0 0 6px rgba(134, 125, 125, 0.904);
   background-clip: content-box
 }
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgb(77, 77, 77); 
+  background: rgb(66, 66, 66); 
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background:  rgb(46, 51, 53); 
+  background:  rgb(109, 109, 109); 
 }
 
 .login-form-container{
   padding:  80px  20px;
   box-shadow: 0px 1px 14px rgba(0, 0, 0, 0.329);
   width: 60%;
+  background-color: rgba(255, 255, 255, 0.308);
   }
-  
   .login-page-container{
       height: 100vh;
       display: flex;
@@ -214,7 +222,124 @@
       align-items: center;
       width: 50%;
       margin: auto;
-      
-   
   }
- 
+  .profile-delete-button{
+    float: right;
+  }
+  .no-wallpaper-warning{
+   color: rgb(138, 184, 138);
+   height: calc(100vh - 10vh);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+  }
+  .loader{
+    /* margin: auto; */
+    display:  inline-block;
+    width: 10px;
+
+  }
+
+
+  .microphone-div{
+    margin-right: 1%;
+  }
+
+  .loading-div{
+    width: 10%;
+    padding-top: 0.3%;
+    margin-right: 1%;
+    align-self: center;
+  }
+
+  
+  .login-container{
+   width: 100vw;
+   background-image: url("/public/Images/loginbg-2.jpg");
+   background-size: cover;
+   background-position: center;
+  }
+
+
+  .bottom-account-link{
+    color: black;
+    cursor: pointer;
+    padding-top: 10px;
+    text-decoration: none;
+    font-style: italic;
+    font-weight: 400;
+
+  }
+
+  .account-link-div{
+    margin-top: 20px;
+    /* float: right;s */
+  }
+
+ .Mui-selected{
+  color: #b396b4 !important;
+ }
+
+
+ .CG-logo-div{
+  font-size: 1.5rem;
+  align-self: center;
+ }
+  .CG-logo-div p{
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .CG-logo-div p .CG-logo-End{
+    font-weight: bold !important;
+    letter-spacing: -1px;
+  }
+
+  .CG-logo-div p .CG-logo-Start{
+    letter-spacing: 2px;
+  }
+
+
+ .search-account{
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+ }
+
+.comment-input{
+  display: flex;
+  justify-content: space-around;
+}
+
+.userComment{
+  display: flex;
+  margin-left: 5%;
+}
+.comment-avater{
+  width: 30px !important;
+  height: 30px !important;
+  margin-right: 10px;
+  background-color:#b396b4 !important;
+}
+
+.comment-text{
+  margin-left: 5%;
+  color: darkgray;
+}
+
+.comments-div{
+  height: 50vh;
+  position: relative;
+  overflow: auto;
+}
+
+.comment-button{
+  background-color: #b396b4 !important;
+  color: white !important;
+}
+
+.no-comment-warning{
+  color: #b396b4;
+}

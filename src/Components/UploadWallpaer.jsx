@@ -6,7 +6,6 @@ import Swal from "sweetalert2";
 import { useNavigate } from "react-router";
 
 export default function UploadWallpaper(props) {
- debugger
   const navigate = useNavigate();
   const [imgsrc, setImgsrc] = useState("");
   const [img, setImg] = useState("Images/Upload-File-2.png");
@@ -62,6 +61,7 @@ export default function UploadWallpaper(props) {
             postLike: 0,
           })
           .then((res) => {
+            
             if (res.status == 200) {
               Swal.fire({
                 position: "bottom-end",
@@ -76,6 +76,7 @@ export default function UploadWallpaper(props) {
             console.log(res);
           })
           .catch((err) => {
+            console.log(err)
             Swal.fire({
               position: "bottom-end",
               icon: "error",
